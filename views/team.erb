@@ -5,9 +5,10 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
-
-
+    <h1>Basketball Team!</h1>
+    <% params.map do |k,v| %>
+        <p><%= "#{k}: #{v}" %></p>
+    <% end %>
  </body>
 </html>
 

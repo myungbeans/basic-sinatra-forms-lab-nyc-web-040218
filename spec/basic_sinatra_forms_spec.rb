@@ -32,7 +32,7 @@ describe App do
 
       fill_in(:name, :with => "Bballers")
       click_button "Submit"
-      expect(page).to have_text("Team Name: Bballers")
+      expect(page).to have_text("name: Bballers")
     end
 
     it "displays the coach's name in the browser" do
@@ -41,7 +41,7 @@ describe App do
       fill_in(:coach, :with => "Walter")
       click_button "Submit"
 
-      expect(page).to have_text("Coach: Walter")
+      expect(page).to have_text("coach: Walter")
     end
 
     it "displays the point guard's name in the browser" do
@@ -50,7 +50,7 @@ describe App do
       fill_in(:pg, :with => "Jeff")
       click_button "Submit"
 
-      expect(page).to have_text("Point Guard: Jeff")
+      expect(page).to have_text("pg: Jeff")
     end
 
     it "displays the shooting guard's name in the browser" do
@@ -59,7 +59,7 @@ describe App do
       fill_in(:sg, :with => "Ralph")
       click_button "Submit"
 
-      expect(page).to have_text("Shooting Guard: Ralph")
+      expect(page).to have_text("sg: Ralph")
     end
 
     it "displays the power forward's name in the browser" do
@@ -68,7 +68,7 @@ describe App do
       fill_in(:pf, :with => "Danny")
       click_button "Submit"
 
-      expect(page).to have_text("Power Forward: Danny")
+      expect(page).to have_text("pf: Danny")
     end
 
     it "displays the shooting gaurd's name in the browser" do
@@ -77,7 +77,7 @@ describe App do
       fill_in(:sg, :with => "Joe")
       click_button "Submit"
 
-      expect(page).to have_text("Shooting Guard: Joe")
+      expect(page).to have_text("sg: Joe")
     end
 
     it "displays the center's name in the browser" do
@@ -86,7 +86,7 @@ describe App do
       fill_in(:c, :with => "Avi")
       click_button "Submit"
 
-      expect(page).to have_text("Center: Avi")
+      expect(page).to have_text("c: Avi")
     end
 
 
